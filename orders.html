@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders - CraveBite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+                <span class="material-icons">restaurant</span>
+                CraveBite
+            </a>
+        </div>
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="orders.html">Orders</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Your Orders</h1>
+            
+            <div class="orders-list">
+                <!-- Order Card 1: Active Order -->
+                <div class="order-card active-order">
+                    <div class="order-header">
+                        <div class="order-id">
+                            <h3>Order #CB10245</h3>
+                            <p class="order-date">Oct 24, 2026 • 2:30 PM</p>
+                        </div>
+                        <div class="order-status status-preparing">
+                            <span class="material-icons">hourglass_empty</span> Preparing
+                        </div>
+                    </div>
+                    <div class="order-body">
+                        <div class="restaurant-info-sm">
+                            <!-- <span class="material-icons" style="font-size: 20px; color: #ff4d4d; vertical-align: middle;">storefront</span> -->
+                            <strong>Burger King</strong>
+                        </div>
+                        <ul class="order-items-list">
+                            <li>2x Whopper Meal</li>
+                            <li>1x Oreo Shake</li>
+                        </ul>
+                    </div>
+                    <div class="order-footer">
+                        <div class="order-total">
+                            Total: <span>₹450</span>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn track-btn">Track Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Card 2: Past Order -->
+                <div class="order-card past-order">
+                    <div class="order-header">
+                        <div class="order-id">
+                            <h3>Order #CB09122</h3>
+                            <p class="order-date">Oct 20, 2026 • 7:15 PM</p>
+                        </div>
+                        <div class="order-status status-delivered">
+                            <span class="material-icons">check_circle</span> Delivered
+                        </div>
+                    </div>
+                    <div class="order-body">
+                        <div class="restaurant-info-sm">
+                            <!-- <span class="material-icons" style="font-size: 20px; color: #ff4d4d; vertical-align: middle;">storefront</span> -->
+                            <strong>Pizza Hut</strong>
+                        </div>
+                        <ul class="order-items-list">
+                            <li>1x Large Pepperoni Pizza</li>
+                            <li>1x Garlic Bread</li>
+                        </ul>
+                    </div>
+                    <div class="order-footer">
+                        <div class="order-total">
+                            Total: <span>₹870</span>
+                        </div>
+                        <div class="order-actions">
+                            <a href="restaurants.html" class="btn outline-btn">Reorder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Foodie. All rights reserved.</p>
+    </footer>
+</body>
+</html>

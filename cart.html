@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+                <span class="material-icons">restaurant</span>
+                CraveBite
+            </a>
+        </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="orders.html">Orders</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h2 class="page-title">Your Cart</h2>
+        <div class="cart-layout">
+            <!-- LEFT 60% : CART ITEMS -->
+
+            <div class="cart-items">
+
+                <div class="cart-product">
+                    <div class="product-info">
+                        <img src="imgs/pizza1.jpg" alt="">
+                        <div class="product-details">
+                            <h3>Margherita Pizza</h3>
+                            <p>Price: ₹399</p>
+                        </div>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="cart-product">
+                    <div class="product-info">
+                        <img src="imgs/coke.png" alt="Coke">
+                        <div class="product-details">
+                            <h3>Coke</h3>
+                            <p>Price: ₹120</p>
+                        </div>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT 40% : ORDER SUMMARY -->
+
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                   <span>Subtotal</span>
+                   <span>₹519</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>₹50</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>₹50</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>₹619</span>
+                </div>
+                <hr>
+                <button class="checkout-btn"><a href=checkout.html style="text-decoration: none; color: white; font-size: 16px; font-weight: 600;">Checkout -></a></button>
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>&copy; 2026 Foodie. All rights reserved.</p>
+</footer>
+</body>
+</html>

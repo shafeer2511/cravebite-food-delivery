@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+    <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+        <span class="material-icons">restaurant</span>
+        CraveBite
+    </a>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="restaurants.html">Restaurants</a>
+<a href="orders.html">Orders</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+
+<main>
+
+<div class="container">
+
+<h2 class="page-title">Payment</h2>
+
+<div class="payment-layout">
+
+
+<!-- LEFT SIDE : PAYMENT FORM -->
+<div class="payment-section">
+
+<h3>Select Payment Method</h3>
+
+<div class="payment-card">
+
+<!-- CREDIT CARD OPTION -->
+<div class="payment-option">
+
+<div class="payment-header">
+<label>
+<input type="radio" name="payment" checked>
+<span>Credit / Debit Card</span>
+</label>
+</div>
+
+<div class="card-details">
+
+<div class="form-group">
+<label>Card Number</label>
+<input type="text" placeholder="1234 5678 9012 3456">
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label>Expiry</label>
+<input type="text" placeholder="MM/YY">
+</div>
+
+<div class="form-group">
+<label>CVV</label>
+<input type="text" placeholder="123">
+</div>
+
+</div>
+
+<div class="form-group">
+<label>Name on Card</label>
+<input type="text" placeholder="John Doe">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-header">
+<label>
+<input type="radio" name="payment">
+<span>UPI</span>
+</label>
+</div>
+
+</div>
+
+
+<div class="payment-option">
+
+<div class="payment-header">
+<label>
+<input type="radio" name="payment">
+<span>Cash on Delivery</span>
+</label>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE : ORDER SUMMARY -->
+
+<div class="payment-summary">
+
+<h3>Amount to Pay</h3>
+
+<div class="pay-amount">
+    ₹549
+</div>
+<p class="payment-note">Your order will be delivered in 30-40 minutes.</p>
+
+<a href="order-confirmation.html" class="confirm-btn">Confirm Payment</a>
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer class="footer">
+<p>&copy; 2026 Foodie. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
