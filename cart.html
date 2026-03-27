@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,19 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
-                <span class="material-icons">restaurant</span>
-                CraveBite
-            </a>
-        </div>
+        <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+            <span class="material-icons">restaurant</span>
+            CraveBite
+        </a>
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="restaurants.html">Restaurants</a>
@@ -27,73 +29,64 @@
         <a href="login.html">Login</a>
     </nav>
 </header>
+
+<!-- MAIN -->
 <main>
     <div class="container">
+
         <h2 class="page-title">Your Cart</h2>
+
         <div class="cart-layout">
-            <!-- LEFT 60% : CART ITEMS -->
 
-            <div class="cart-items">
-
-                <div class="cart-product">
-                    <div class="product-info">
-                        <img src="imgs/pizza1.jpg" alt="">
-                        <div class="product-details">
-                            <h3>Margherita Pizza</h3>
-                            <p>Price: ₹399</p>
-                        </div>
-                    </div>
-                    <div class="quantity-control">
-                        <button class="quantity-btn">-</button>
-                        <span class="quantity">1</span>
-                        <button class="quantity-btn">+</button>
-                    </div>
-                </div>
-                <div class="cart-product">
-                    <div class="product-info">
-                        <img src="imgs/coke.png" alt="Coke">
-                        <div class="product-details">
-                            <h3>Coke</h3>
-                            <p>Price: ₹120</p>
-                        </div>
-                    </div>
-                    <div class="quantity-control">
-                        <button class="quantity-btn">-</button>
-                        <span class="quantity">1</span>
-                        <button class="quantity-btn">+</button>
-                    </div>
-                </div>
+            <!-- LEFT: CART ITEMS -->
+            <div class="cart-items" id="cart-items">
+                <!-- JS will dynamically insert cart items here -->
             </div>
-
-            <!-- RIGHT 40% : ORDER SUMMARY -->
-
+            
+            <!-- RIGHT: ORDER SUMMARY -->
             <div class="order-summary">
+
                 <h3>Order Summary</h3>
+
                 <div class="summary-row">
-                   <span>Subtotal</span>
-                   <span>₹519</span>
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
                 </div>
+
                 <div class="summary-row">
                     <span>Delivery</span>
-                    <span>₹50</span>
+                    <span id="delivery">₹50</span>
                 </div>
+
                 <div class="summary-row">
-                    <span>Tax</span>
-                    <span>₹50</span>
+                    <span>Tax (5%)</span>
+                    <span id="tax">₹0</span>
                 </div>
+
                 <div class="summary-row total">
                     <span>Total</span>
-                    <span>₹619</span>
+                    <span id="total">₹0</span>
                 </div>
+
                 <hr>
-                <button class="checkout-btn"><a href=checkout.html style="text-decoration: none; color: white; font-size: 16px; font-weight: 600;">Checkout -></a></button>
+
+                <button class="checkout-btn" id="checkout-btn">
+                    Proceed to Checkout →
+                </button>
 
             </div>
+
         </div>
     </div>
 </main>
+
+<!-- FOOTER -->
 <footer class="footer">
     <p>&copy; 2026 Foodie. All rights reserved.</p>
 </footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
 </body>
 </html>

@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Restaurants</title>
+  <title>Restaurants</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
-                <span class="material-icons">restaurant</span>
-                CraveBite
-            </a>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+        <span class="material-icons">restaurant</span>
+        CraveBite
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="orders.html">Orders</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+      <h2 class="page-title">Restaurants</h2>
+
+      <div class="restaurant-grid">
+
+        <!-- Restaurant 1 -->
+        <div class="restaurant-card">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Pizza Palace">
+          <h3>Pizza Palace</h3>
+          <p>Italian • Pizza • Pasta</p>
+          <p>⭐ 4.5</p>
+
+          <button 
+            class="btn view-menu"
+            data-id="r1"
+            data-name="Pizza Palace"
+          >
+            View Menu
+          </button>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="restaurants.html">Restaurants</a>
-            <a href="orders.html">Orders</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2 class="page-title">Restaurants</h2>
-            <div class="restaurant-grid">
-                <div class="restaurant-card">
-                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
-                    <h3>Pizza Palace</h3>
-                    <p>Italian • Pizza • Pasta</p>
-                    <p>⭐ 4.5</p>
-                    <a href="menu.html" class="btn">View Menu</a>
-                </div>
-                <div class="restaurant-card">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
-                    <h3>Burger House</h3>
-                    <p>American • Burgers • Fast Food</p>
-                    <p>⭐ 4.2</p>
-                    <a href="menu.html" class="btn">View Menu</a>
-                </div>
-                <div class="restaurant-card">
-                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
-                    <h3>Spicy Kitchen</h3>
-                    <p>Indian • Curry • Rice</p>
-                    <p>⭐ 4.6</p>
-                    <a href="menu.html" class="btn">View Menu</a>
-                </div>
-            </div>
+
+        <!-- Restaurant 2 -->
+        <div class="restaurant-card">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger House">
+          <h3>Burger House</h3>
+          <p>American • Burgers • Fast Food</p>
+          <p>⭐ 4.2</p>
+
+          <button 
+            class="btn view-menu"
+            data-id="r2"
+            data-name="Burger House"
+          >
+            View Menu
+          </button>
         </div>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2026 Foodie. All rights reserved.</p>
-    </footer>
+
+        <!-- Restaurant 3 -->
+        <div class="restaurant-card">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Spicy Kitchen">
+          <h3>Spicy Kitchen</h3>
+          <p>Indian • Curry • Rice</p>
+          <p>⭐ 4.6</p>
+
+          <button 
+            class="btn view-menu"
+            data-id="r3"
+            data-name="Spicy Kitchen"
+          >
+            View Menu
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Foodie. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
