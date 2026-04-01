@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body> 
+
+<body>
     <header class="navbar">
         <div class="logo">
             <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
@@ -21,45 +23,45 @@
             <a href="restaurants.html">Restaurants</a>
             <a href="orders.html">Orders</a>
             <a href="cart.html">Cart</a>
-            <a href="login.html">Login</a>
+            <span id="nav-user"></span>
         </nav>
     </header>
     <main>
         <div class="container">
             <h2 class="page-title">Register</h2>
             <div class="form-card">
-                <form action="">
+                <form action="" id="register-form">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" placeholder="Enter your name" required>
-                        </div>
+                    </div>
 
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Enter your email" required>
-                        </div>
+                    </div>
 
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" placeholder="Enter phone number" maxlength="10" required>
-                        </div>
+                    </div>
 
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Create password" minlength="6" required>
-                        </div>
+                    </div>
 
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="confirm">Confirm Password</label>
                         <input type="password" id="confirm" placeholder="Confirm password" required>
-                        </div>
+                    </div>
 
-                        <button type="submit" class="btn">Register</button>
+                    <button type="submit" class="btn">Register</button>
 
-                        <p class="form-link">
+                    <p class="form-link">
                         Already have an account?
                         <a href="login.html">Login</a>
-                        </p>
+                    </p>
                 </form>
             </div>
         </div>
@@ -67,4 +69,5 @@
     <footer class="footer">
         <p>&copy; 2026 Foodie. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
