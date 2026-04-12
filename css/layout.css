@@ -1,0 +1,67 @@
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-style {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff4d4d;
+    color: white;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.page-title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.category-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.restaurant-info {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.restaurant-info-sm {
+    margin-bottom: 15px;
+    font-size: 16px;
+}

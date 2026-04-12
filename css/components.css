@@ -1,0 +1,281 @@
+.btn {
+    display: inline-block;
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+    border-width: 0px;
+}
+
+.btn:hover {
+    background: #fb6f6f;
+}
+
+.form-card {
+    width: 360px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.form-card:hover {
+    transform: translateY(-10px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quantity-btn:hover {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-row.total {
+    font-weight: 600;
+    color: #ff4d4d;
+}
+
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    background: #ff4d4d;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.checkout-btn:hover {
+    background: #fb6f6f;
+}
+
+.address-btn {
+    padding: 10px 15px;
+    background: #ff4d4d;
+    color: #fff;
+    border-radius: 30px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.address-btn:hover {
+    background: #fb6f6f;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.confirm-btn:hover {
+    background: #fb6f6f;
+}
+
+.order-btn {
+    display: inline-block;
+
+    background: #ff4d4f;
+    color: #fff;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #e6393c;
+}
+
+.home-btn {
+    display: inline-block;
+
+    background: #f1f1f1;
+    color: #333;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #e5e5e5;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* PROFILE CONTAINER */
+.profile-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* ICON */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.profile-icon:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+.profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    z-index: 100;
+}
+
+/* TEXT */
+.profile-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.profile-phone {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+/* BUTTONS */
+#settings-btn {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+#settings-btn:hover {
+    background: #ebebeb;
+    border-color: #d6d6d6;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background: #ff4d4d;
+}
+
+/* DIVIDER */
+.profile-dropdown hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}

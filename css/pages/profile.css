@@ -1,0 +1,91 @@
+/* PROFILE CONTAINER */
+.profile-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* ICON */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.profile-icon:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+.profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    z-index: 100;
+}
+
+/* TEXT */
+.profile-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.profile-phone {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+#settings-btn {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+#settings-btn:hover {
+    background: #ebebeb;
+    border-color: #d6d6d6;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background: #ff4d4d;
+}
+
+/* DIVIDER */
+.profile-dropdown hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}

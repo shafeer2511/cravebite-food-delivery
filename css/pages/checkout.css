@@ -1,0 +1,262 @@
+.checkout-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.address-section {
+    flex: 6;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.address-card {
+    margin-bottom: 15px;
+}
+
+/* Wrapper (clickable full card) */
+.address-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background: #fafafa;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+/* Radio button */
+.address-wrapper input[type="radio"] {
+    margin-top: 5px;
+    accent-color: #ff4d4d;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Hover effect */
+.address-wrapper:hover {
+    background: #fff5f5;
+    border-color: #ffd6d6;
+    transform: translateY(-2px);
+}
+
+/* Selected state */
+.address-wrapper input[type="radio"]:checked+.address-content {
+    border-left: 4px solid #ff4d4d;
+    padding-left: 12px;
+}
+
+.address-content {
+    flex: 1;
+}
+
+/* Header (name + badge) */
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.address-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #222;
+}
+
+/* Optional badge */
+.address-badge {
+    background: #ffe5e5;
+    color: #ff4d4d;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+/* Body text */
+.address-body p {
+    color: #555;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.no-address {
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* FORM CONTAINER */
+#address-form {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.25s ease;
+}
+
+#address-form.hidden {
+    display: none !important;
+}
+
+/* INPUT GROUP (optional wrapper if you add labels) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* LABELS */
+.input-group label {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* INPUT FIELDS */
+#address-form input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+/* PLACEHOLDER */
+#address-form input::placeholder {
+    color: #aaa;
+}
+
+/* FOCUS STATE (important UX) */
+#address-form input:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.15);
+}
+
+/* HOVER */
+#address-form input:hover {
+    border-color: #bbb;
+}
+
+/* SAVE BUTTON */
+#save-address-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background: #ff4d4d;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER */
+#save-address-btn:hover {
+    background: #e63939;
+    transform: translateY(-1px);
+}
+
+/* BUTTON ACTIVE */
+#save-address-btn:active {
+    transform: scale(0.98);
+}
+
+/* SIMPLE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+.order-summary {
+    flex: 4;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-row.total {
+    font-weight: 600;
+    color: #ff4d4d;
+}
+
+.add-address-btn {
+    margin-top: 10px;
+}
+
+/* Header alignment */
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right side (badge + delete) */
+.address-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Delete button */
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+/* Icon styling */
+.delete-btn .material-icons {
+    font-size: 20px;
+    color: #888;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.delete-btn:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.delete-btn:hover .material-icons {
+    color: #e53935;
+}
+
+/* Active click */
+.delete-btn:active {
+    transform: scale(0.9);
+}
