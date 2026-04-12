@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+
+    <!-- per page -->
+    <link rel="stylesheet" href="../css/pages/checkout.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="../pages/index.html" class="logo-style">
+                <span class="material-icons">restaurant</span>
+                CraveBite
+            </a>
+        </div>
+        <nav>
+            <a href="../pages/index.html">Home</a>
+            <a href="../pages/restaurants.html">Restaurants</a>
+            <a href="../pages/orders.html">Orders</a>
+            <a href="../pages/cart.html">Cart</a>
+            <div id="nav-profile"></div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="page-title">Checkout</h2>
+            <div class="checkout-layout">
+                <!-- LEFT SIDE 60% : ADDRESS SELECTION -->
+                <div class="address-section">
+
+                    <h3>Select Address</h3>
+
+                    <!-- Address List -->
+                    <div id="address-list"></div>
+
+                    <!-- Empty State -->
+                    <div id="no-address" class="hidden">
+                        <p>No address found. Please add one to continue.</p>
+                    </div>
+
+                    <!-- Add Address Form -->
+                    <div id="address-form" class="hidden">
+
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="street">Street Address</label>
+                            <input id="street" placeholder="House no, street, area">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="city">City</label>
+                            <input id="city" placeholder="Enter city">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="pincode">Pincode</label>
+                            <input id="pincode" placeholder="6-digit code">
+                        </div>
+
+                        <button id="save-address-btn">Save Address</button>
+                    </div>
+
+                    <button class="address-btn" id="add-address-btn">+ Add Address</button>
+
+                </div>
+                <!-- RIGHT SIDE 40% : ORDER SUMMARY -->
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <span id="delivery">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (5%)</span>
+                        <span id="tax">₹0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">₹0</span>
+                    </div>
+                    <hr>
+                    <button class="checkout-btn"><a href="../pages/payment.html"
+                            style="text-decoration: none; color: white; font-size: 16px; font-weight: 600;">Proceed to
+                            payment</a></button>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 Foodie. All rights reserved.</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

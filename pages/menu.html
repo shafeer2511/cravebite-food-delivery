@@ -8,7 +8,14 @@
   <title>Restaurant Menu</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+
+  <!-- per page -->
+  <link rel="stylesheet" href="../css/pages/restaurant.css">
+
 </head>
 
 <body>
@@ -16,15 +23,15 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">
-      <a href="index.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: 600;">
+      <a href="../pages/index.html" class="logo-style">
         CraveBite
       </a>
     </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="restaurants.html">Restaurants</a>
-      <a href="orders.html">Orders</a>
-      <a href="cart.html">Cart</a>
+      <a href="../pages/index.html">Home</a>
+      <a href="../pages/restaurants.html">Restaurants</a>
+      <a href="../pages/orders.html">Orders</a>
+      <a href="../pages/cart.html">Cart</a>
       <div id="nav-profile"></div>
     </nav>
   </header>
@@ -41,7 +48,9 @@
       <section>
         <h2 class="category-title">Menu</h2>
 
-        <div id="menu-items" class="restaurant-grid"></div>
+        <div id="menu-items" class="restaurant-grid">
+
+        </div>
 
       </section>
 
@@ -54,7 +63,7 @@
   </footer>
 
   <!-- JS -->
-  <script src="js/script.js"></script>
+  <script type="module" src="../js/main.js"></script>
 
 </body>
 
